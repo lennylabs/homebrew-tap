@@ -1,23 +1,23 @@
 class Podium < Formula
   desc "Catalog and registry for reusable AI agent artifacts"
   homepage "https://github.com/lennylabs/podium"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/lennylabs/podium/releases/download/v0.1.1/podium-darwin-arm64.tar.gz"
-      sha256 "0000000000000000000000000000000000000000000000000000000000000000" # darwin-arm64
+      url "https://github.com/lennylabs/podium/releases/download/v0.1.2/podium-darwin-arm64.tar.gz"
+      sha256 "0a7c5e987de1a22d410d6098b657655817ad5a4cddddcdf257cb72c9bff2d389" # darwin-arm64
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/lennylabs/podium/releases/download/v0.1.1/podium-linux-amd64.tar.gz"
-      sha256 "0000000000000000000000000000000000000000000000000000000000000000" # linux-amd64
+      url "https://github.com/lennylabs/podium/releases/download/v0.1.2/podium-linux-amd64.tar.gz"
+      sha256 "049c5762758efaacb3ccda0050d4d6ced4bb6310f9714b932f08be2cb14c79de" # linux-amd64
     elsif Hardware::CPU.arm?
-      url "https://github.com/lennylabs/podium/releases/download/v0.1.1/podium-linux-arm64.tar.gz"
-      sha256 "0000000000000000000000000000000000000000000000000000000000000000" # linux-arm64
+      url "https://github.com/lennylabs/podium/releases/download/v0.1.2/podium-linux-arm64.tar.gz"
+      sha256 "f929c6e73000047577b101eaf3296e4ea450ddadae55b5765991805f8f1bd010" # linux-arm64
     end
   end
 
